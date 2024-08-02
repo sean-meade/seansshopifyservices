@@ -7,19 +7,19 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/imgs/favicon-32x32.png"
+      href="images/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/imgs/favicon-16x16.png"
+      href="images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link
@@ -34,6 +34,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   </head>
 
   <body>
@@ -56,43 +57,15 @@
           </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto pe-5">
+          <ul class="navbar-nav ms-auto pr-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#services">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+              <a class="nav-link" href="#Projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="#Get-in-touch">Get in touch</a>
             </li>
           </ul>
         </div>
@@ -123,7 +96,7 @@
       </div>
     </header>
 
-    <section>
+    <section id="services">
       <div class="section-tag-container">
         <div class="text-block">Services</div>
         <div class="section-tag-line"></div>
@@ -456,7 +429,7 @@
     </footer>
 
     <script src="" async defer></script>
-    {% comment %} <script>
+    <script>
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
@@ -466,7 +439,7 @@
             alert("Please fill out all required fields.");
           }
         });
-    </script> {% endcomment %}
+    </script>
     <script>
     window.onload = function() { 
   var el = document.getElementById('g-recaptcha-response'); 
@@ -506,6 +479,21 @@
           });
       }
       form.addEventListener("submit", handleSubmit);
+    </script>
+    
+    <script type="text/javascript">
+      $(document).click(function (event) {
+        var $target = $(event.target);
+        if (
+          !$target.closest(".navbar-nav").length &&
+          $("#navbarSupportedContent").is(":visible")
+        ) {
+          $("#hamburg-button")
+            .addClass("collapsed")
+            .attr("aria-expanded", "false");
+          $("#navbarSupportedContent").removeClass("show");
+        }
+      });
     </script>
   </body>
 </html>

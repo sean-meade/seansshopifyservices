@@ -37,6 +37,18 @@ body {
   padding: 0px !important;
 }
 
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
+}
+
+.navbar-nav {
+  max-width: fit-content;
+}
+
 #navbarSupportedContent {
   width: 100%;
 }
@@ -128,6 +140,11 @@ body {
   margin-left: 20px;
 }
 
+#services {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 .service-cards-wrapper {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -135,15 +152,16 @@ body {
   justify-content: space-around;
   max-width: 1400px;
   display: flex;
+  column-count: 3;
 }
 
 .service-card {
   background-color: rgba(68, 84, 254, 0);
   background-image: linear-gradient(144deg, rgba(255, 111, 76, .14), rgba(68, 84, 254, .14));
-  min-width: 0%;
-  max-width: 30%;
-  padding: 50px;
+  padding: 1.5rem;
   transition: all .4s;
+  flex: 0 1 calc(33.333% - 20px);
+  box-sizing: border-box;
 }
 
 .service-card-title {
@@ -343,6 +361,11 @@ p {
 .section-container {
   flex: 1;
   max-width: 1400px;
+}
+
+#Get-in-touch {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .contact-content-container {
