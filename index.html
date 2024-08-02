@@ -1,273 +1,502 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/imgs/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><b>Seans</b> Shopify Services</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon burger">
-          <div class="burger-line"></div>
-          <div class="burger-line bl-mid"></div>
-          <div class="burger-line"></div>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto pe-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="py-5 mb-4" id="hero-section">
-    <div class="container d-flex flex-column">
-      <div class="my-5">
-        <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-        <p class="lead mb-0">
-          A Bootstrap 5 starter layout for your next blog homepage
-        </p>
-      </div>
-      <div class="button-container">
-        <a class="button">
-          <div class="button-content">
-            <div>Request a website</div>
-            <img src="https://cdn.prod.website-files.com/6691077d71aac2b8a5a4ed10/6691077d71aac2b8a5a4ed5a_Arrow.svg"
-              loading="lazy" alt="" class="button-arrow" />
-          </div>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <section>
-    <div class="section-tag-container">
-      <div class="text-block">Services</div>
-      <div class="section-tag-line"></div>
-    </div>
-
-    <!--  -->
-    <div class="service-cards-wrapper">
-      <div class="service-card">
-        <div class="service-card-title">Store Build or Redesign</div>
-        <h5 class="heading">Starting at €800</h5>
-        <p class="service-card-paragraph">Create stunning, high-converting Shopify stores. We design and build
-          e-commerce sites that elevate your brand online.</p>
-        <p class="service-card-list">• Custom theme setup and design<br>• Logo and banner creation<br>• Product page
-          optimization<br>• Payment gateway integration<br>• Shipping configuration<br>• Mobile responsiveness<br>• App
-          integration and setup<br>• Post-launch support and training</p>
-      </div>
-      <div class="service-card">
-        <div class="service-card-title">Theme Customization</div>
-        <h5 class="heading">Starting at €600</h5>
-        <p class="service-card-paragraph">Elevate your Shopify store with tailored theme customizations. We transform
-          designs to match your brand vision.</p>
-        <p class="service-card-list">• Custom page and section creation<br>• Header and footer
-          modifications<br>• Product page enhancements<br>• Currency and language settings<br>• Navigation and search
-          optimization<br>• Cart and checkout customization<br>• Integration of custom features and code<br>• Mobile
-          responsiveness adjustments</p>
-      </div>
-      <div class="service-card">
-        <div class="service-card-title">Troubleshooting</div>
-        <h5 class="heading">Starting at €70</h5>
-        <p class="service-card-paragraph">Swift, expert solutions for Shopify store issues. We diagnose and fix problems
-          to maximize sales.</p>
-        <p class="service-card-list">• Theme and liquid code error resolution<br>• App integration
-          troubleshooting<br>• UI/UX issue fixes<br>• Custom product options debugging<br>• Social media integration
-          problem-solving<br>• Mobile view optimization<br>• Performance and speed improvements<br>• JavaScript and CSS
-          error corrections<br></p>
-      </div>
-      <div class="service-card">
-        <div class="service-card-title">Site Performance</div>
-        <h5 class="heading">Starting at €200</h5>
-        <p class="service-card-paragraph">Boost your Shopify store's speed and performance. We optimize for better user
-          experience and SEO.</p>
-        <p class="service-card-list">• Core Web Vitals optimization<br>• Image and file compression<br>• JavaScript and
-          CSS minification<br>• Browser caching implementation<br>• Lazy loading of off-screen content<br>• Third-party
-          app code optimization<br>• Server response time improvement<br>• Mobile and desktop speed enhancement<br></p>
-      </div>
-      <div class="service-card">
-        <div class="service-card-title">SEO</div>
-        <h5 class="heading">Starting at €250</h5>
-        <p class="service-card-paragraph">Amplify your Shopify store's visibility. We optimize for search engines to
-          drive organic traffic.</p>
-        <p class="service-card-list">• Keyword research and implementation<br>• On-page SEO optimization<br>• Technical
-          SEO (sitemaps, robots.txt)<br>• Content optimization<br>• Meta tag and alt text optimization<br>• Google
-          Analytics and Search Console setup<br>• Mobile SEO<br>• Local SEO and directory submissions</p>
-      </div>
-      <div class="service-card">
-        <div class="service-card-title">Advanced Solutions</div>
-        <h5 class="heading">Starting at €150</h5>
-        <p class="service-card-paragraph">Seamlessly integrate, migrate, and customize your Shopify store for optimal
-          performance and business growth.</p>
-        <p class="service-card-list">• ERP/CRM/PIM/WMS system integration with Shopify<br>• Store migration from various
-          platforms (e.g., Magento, WooCommerce)<br>• Custom and private app development<br>• Third-party service
-          integrations (payment, shipping, inventory)<br>• Data migration and organization<br>• URL redirect
-          setup<br>• API and middleware solution development<br>• Post-migration support and optimization</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="Projects">
-    <div class="slider-section-wrapper glow-1">
-      <div class="slider-section-container">
-        <div class="section-tag-container">
-          <div>Projects</div>
-          <div class="section-tag-line"></div>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b>Seans</b> Shopify Services</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon burger">
+            <div class="burger-line"></div>
+            <div class="burger-line bl-mid"></div>
+            <div class="burger-line"></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto pe-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="projects-slider-wrapper">
-          <div class="project-slider w-slider">
-            <div class="project-sldier-mask w-slider-mask" id="w-slider-mask-0">
-              <div class="w-slide">
-                <div class="project-container">
-                  <div class="project-info-container">
-                    <h2 class="project-title">Write a fancy title about your project here</h2>
-                    <div class="project-tag-container">
-                      <div class="project-tag">Brand identity</div>
-                      <div class="project-tag">UI&amp;UX</div>
-                      <div class="project-tag">Graphic design</div>
-                      <div class="project-tag">Web development</div>
-                    </div>
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                      varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
-                      nulla, ut commodo diam libero vitae erat. </p><a href="#" class="project-link w-inline-block">
-                      <div class="button-container">
-                        <a class="button">
-                          <div class="button-content">
-                            <div>Request a website</div>
-                            <img
-                              src="https://cdn.prod.website-files.com/6691077d71aac2b8a5a4ed10/6691077d71aac2b8a5a4ed5a_Arrow.svg"
-                              loading="lazy" alt="" class="button-arrow" />
-                          </div>
-                        </a>
+      </div>
+    </nav>
+
+    <header class="py-5 mb-4" id="hero-section">
+      <div class="container d-flex flex-column">
+        <div class="my-5">
+          <h1 class="fw-bolder">Welcome to Blog Home!</h1>
+          <p class="lead mb-0">
+            A Bootstrap 5 starter layout for your next blog homepage
+          </p>
+        </div>
+        <div class="button-container">
+          <a class="button">
+            <div class="button-content">
+              <div>Request a website</div>
+              <img
+                src="https://cdn.prod.website-files.com/6691077d71aac2b8a5a4ed10/6691077d71aac2b8a5a4ed5a_Arrow.svg"
+                loading="lazy"
+                alt=""
+                class="button-arrow"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-tag-container">
+        <div class="text-block">Services</div>
+        <div class="section-tag-line"></div>
+      </div>
+
+      <!--  -->
+      <div class="service-cards-wrapper">
+        <div class="service-card">
+          <div class="service-card-title">Store Build or Redesign</div>
+          <h5 class="heading">Starting at €800</h5>
+          <p class="service-card-paragraph">
+            Create stunning, high-converting Shopify stores. We design and build
+            e-commerce sites that elevate your brand online.
+          </p>
+          <p class="service-card-list">
+            • Custom theme setup and design<br />• Logo and banner creation<br />• Product
+            page optimization<br />• Payment gateway integration<br />• Shipping
+            configuration<br />• Mobile responsiveness<br />• App integration
+            and setup<br />• Post-launch support and training
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-title">Theme Customization</div>
+          <h5 class="heading">Starting at €600</h5>
+          <p class="service-card-paragraph">
+            Elevate your Shopify store with tailored theme customizations. We
+            transform designs to match your brand vision.
+          </p>
+          <p class="service-card-list">
+            • Custom page and section creation<br />• Header and footer
+            modifications<br />• Product page enhancements<br />• Currency and
+            language settings<br />• Navigation and search optimization<br />• Cart
+            and checkout customization<br />• Integration of custom features and
+            code<br />• Mobile responsiveness adjustments
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-title">Troubleshooting</div>
+          <h5 class="heading">Starting at €70</h5>
+          <p class="service-card-paragraph">
+            Swift, expert solutions for Shopify store issues. We diagnose and
+            fix problems to maximize sales.
+          </p>
+          <p class="service-card-list">
+            • Theme and liquid code error resolution<br />• App integration
+            troubleshooting<br />• UI/UX issue fixes<br />• Custom product
+            options debugging<br />• Social media integration problem-solving<br />• Mobile
+            view optimization<br />• Performance and speed improvements<br />• JavaScript
+            and CSS error corrections<br />
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-title">Site Performance</div>
+          <h5 class="heading">Starting at €200</h5>
+          <p class="service-card-paragraph">
+            Boost your Shopify store's speed and performance. We optimize for
+            better user experience and SEO.
+          </p>
+          <p class="service-card-list">
+            • Core Web Vitals optimization<br />• Image and file compression<br />• JavaScript
+            and CSS minification<br />• Browser caching implementation<br />• Lazy
+            loading of off-screen content<br />• Third-party app code
+            optimization<br />• Server response time improvement<br />• Mobile
+            and desktop speed enhancement<br />
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-title">SEO</div>
+          <h5 class="heading">Starting at €250</h5>
+          <p class="service-card-paragraph">
+            Amplify your Shopify store's visibility. We optimize for search
+            engines to drive organic traffic.
+          </p>
+          <p class="service-card-list">
+            • Keyword research and implementation<br />• On-page SEO
+            optimization<br />• Technical SEO (sitemaps, robots.txt)<br />• Content
+            optimization<br />• Meta tag and alt text optimization<br />• Google
+            Analytics and Search Console setup<br />• Mobile SEO<br />• Local
+            SEO and directory submissions
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-title">Advanced Solutions</div>
+          <h5 class="heading">Starting at €150</h5>
+          <p class="service-card-paragraph">
+            Seamlessly integrate, migrate, and customize your Shopify store for
+            optimal performance and business growth.
+          </p>
+          <p class="service-card-list">
+            • ERP/CRM/PIM/WMS system integration with Shopify<br />• Store
+            migration from various platforms (e.g., Magento, WooCommerce)<br />• Custom
+            and private app development<br />• Third-party service integrations
+            (payment, shipping, inventory)<br />• Data migration and
+            organization<br />• URL redirect setup<br />• API and middleware
+            solution development<br />• Post-migration support and optimization
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Projects">
+      <div class="slider-section-wrapper glow-1">
+        <div class="slider-section-container">
+          <div class="section-tag-container">
+            <div>Projects</div>
+            <div class="section-tag-line"></div>
+          </div>
+          <div class="projects-slider-wrapper">
+            <div class="project-slider w-slider">
+              <div
+                class="project-sldier-mask w-slider-mask"
+                id="w-slider-mask-0"
+              >
+                <div class="w-slide">
+                  <div class="project-container">
+                    <div class="project-info-container">
+                      <h2 class="project-title">
+                        Write a fancy title about your project here
+                      </h2>
+                      <div class="project-tag-container">
+                        <div class="project-tag">Brand identity</div>
+                        <div class="project-tag">UI&amp;UX</div>
+                        <div class="project-tag">Graphic design</div>
+                        <div class="project-tag">Web development</div>
                       </div>
-                    </a>
+                      <p class="project-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum
+                        nulla, ut commodo diam libero vitae erat.
+                      </p>
+                      <a href="#" class="project-link w-inline-block">
+                        <div class="button-container">
+                          <a class="button">
+                            <div class="button-content">
+                              <div>Request a website</div>
+                              <img
+                                src="https://cdn.prod.website-files.com/6691077d71aac2b8a5a4ed10/6691077d71aac2b8a5a4ed5a_Arrow.svg"
+                                loading="lazy"
+                                alt=""
+                                class="button-arrow"
+                              />
+                            </div>
+                          </a>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="project-image-container">
+                      <img
+                        src="https://cdn.prod.website-files.com/6691077d71aac2b8a5a4ed10/6691077d71aac2b8a5a4ed61_Mockups2-p-500.jpg"
+                        loading="lazy"
+                        alt="Project mockup 1"
+                        class="project-image"
+                      />
+                    </div>
                   </div>
-                  <div class="project-image-container"><img
-                      src="https://cdn.prod.website-files.com/6691077d71aac2b8a5a4ed10/6691077d71aac2b8a5a4ed61_Mockups2-p-500.jpg"
-                      loading="lazy" alt="Project mockup 1" class="project-image"></div>
                 </div>
-              </div>
-              <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Get-in-touch">
-    <div class="section-wrapper glow-1">
-      <div class="section-container contact">
-        <div class="section-tag-container">
-          <div>Start a project</div>
-          <div class="section-tag-line"></div>
-        </div>
-        <div class="contact-content-container">
-          <div data-w-id="67c37a7c-c228-fa32-059c-4448825b769d"
-            style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-            class="section-title-container">
-            <h2 class="section-title">Let us know if you want to talk about your next project!</h2>
-            <div class="text-block-2">Fill the form and start a project or, if you prefer to email us instead...
-              <strong>seanwebsitedevelopment@gmail.com</strong>
-            </div>
-          </div>
-          <div data-w-id="67c37a7c-c228-fa32-059c-4448825b76a2"
-            style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-            class="contact-form-container">
-            <div class="form-block w-form">
-              <form action="mailto:sean@seansshopifyservices.com" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post"
-                class="form" data-wf-page-id="6691077d71aac2b8a5a4ed4a" enctype="text/plain"
-                data-wf-element-id="334090c9-454f-4181-6d63-afcb9ab47270" aria-label="Contact Form">
-                <div class="field-container"><label for="name" class="field-label">What's your name?</label><input
-                    class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="" type="text"
-                    id="name"></div>
-                <div class="field-container"><label for="name-2" class="field-label">What's your email?</label><input
-                    class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder=""
-                    type="text" id="name-2"></div>
-                <div class="field-container"><label for="name-3" class="field-label">What's your budget? (Ex.
-                    €700&nbsp;- €2K)</label><input class="text-field w-input" maxlength="256" name="name-3"
-                    data-name="Name 3" placeholder="" type="text" id="name-3"></div>
-                <div class="field-container"><label for="name-4" class="field-label">Describe your
-                    project</label><textarea placeholder="" maxlength="5000" id="Project-description"
-                    name="Project-description" required="" data-name="field" class="textarea w-input"></textarea></div>
-                <div data-w-id="ea52c13a-8943-5831-2e14-3b6b958ad7e0" class="magnetic-element"
-                  style="will-change: transform; transform: translate3d(0vw, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                  <div class="button-1"><input type="submit" data-wait="Sending..." class="submit-button w-button"
-                      value="Request a website"></div>
-                </div>
-              </form>
-              <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Contact Form success">
-                <div class="div-block">
-                  <div>Thank you! Your submission has been received!</div>
-                </div>
-              </div>
-              <div class="error-message w-form-fail" tabindex="-1" role="region" aria-label="Contact Form failure">
-                <div>Oops! Something went wrong while submitting the form.</div>
+                <div
+                  aria-live="off"
+                  aria-atomic="true"
+                  class="w-slider-aria-label"
+                  data-wf-ignore=""
+                ></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="footer-wrapper">
-      <div class="footer-container"><a href="/" title="Return to Main Page" aria-current="page"
-          class="home footer w-inline-block w--current">
-          <div>Seán <span class="site-name-text-span">Meade</span></div>
-        </a>
-        <div>Copyright © Kabello Studio</div>
+    <section id="Get-in-touch">
+      <div class="section-wrapper glow-1">
+        <div class="section-container contact">
+          <div class="section-tag-container">
+            <div>Start a project</div>
+            <div class="section-tag-line"></div>
+          </div>
+          <div class="contact-content-container">
+            <div
+              data-w-id="67c37a7c-c228-fa32-059c-4448825b769d"
+              style="
+                opacity: 1;
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                  rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+              "
+              class="section-title-container"
+            >
+              <h2 class="section-title">
+                Let us know if you want to talk about your next project!
+              </h2>
+              <div class="text-block-2">
+                Fill the form and start a project or, if you prefer to email us
+                instead...
+                <strong>seanwebsitedevelopment@gmail.com</strong>
+              </div>
+            </div>
+            <div
+              data-w-id="67c37a7c-c228-fa32-059c-4448825b76a2"
+              style="
+                opacity: 1;
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                  rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+              "
+              class="contact-form-container"
+            >
+              <div class="form-block w-form">
+                <form
+                  action="https://formspree.io/f/mrbzqygq"
+                  method="POST"
+                  class="form"
+                >
+                  <div class="field-container">
+                    <label for="name" class="field-label"
+                      >What's your name?</label
+                    ><input
+                      class="text-field w-input"
+                      maxlength="256"
+                      name="name"
+                      data-name="Name"
+                      placeholder=""
+                      type="text"
+                      id="name"
+                    />
+                  </div>
+                  <div class="field-container">
+                    <label for="name-2" class="field-label"
+                      >What's your email?</label
+                    ><input
+                      class="text-field w-input"
+                      maxlength="256"
+                      name="name-2"
+                      data-name="Name 2"
+                      placeholder=""
+                      type="text"
+                      id="name-2"
+                    />
+                  </div>
+                  <div class="field-container">
+                    <label for="name-3" class="field-label"
+                      >What's your budget? (Ex. €700&nbsp;- €2K)</label
+                    ><input
+                      class="text-field w-input"
+                      maxlength="256"
+                      name="name-3"
+                      data-name="Name 3"
+                      placeholder=""
+                      type="text"
+                      id="name-3"
+                    />
+                  </div>
+                  <div class="field-container">
+                    <label for="name-4" class="field-label"
+                      >Describe your project</label
+                    ><textarea
+                      placeholder=""
+                      maxlength="5000"
+                      id="Project-description"
+                      name="Project-description"
+                      required=""
+                      data-name="field"
+                      class="textarea w-input"
+                    ></textarea>
+                  </div>
+                  <div
+                    data-w-id="ea52c13a-8943-5831-2e14-3b6b958ad7e0"
+                    class="magnetic-element"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(0vw, 0vh, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    <div class="button-1">
+                      <input
+                        type="submit"
+                        data-wait="Sending..."
+                        class="submit-button w-button"
+                        value="Request a website"
+                      />
+                    </div>
+                  </div>
+                </form>
+                <div
+                  class="success-message w-form-done"
+                  tabindex="-1"
+                  role="region"
+                  aria-label="Contact Form success"
+                >
+                  <div class="div-block">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                </div>
+                <div
+                  class="error-message w-form-fail"
+                  tabindex="-1"
+                  role="region"
+                  aria-label="Contact Form failure"
+                >
+                  <div>
+                    Oops! Something went wrong while submitting the form.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="" async defer></script>
-</body>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-container">
+          <a
+            href="/"
+            title="Return to Main Page"
+            aria-current="page"
+            class="home footer w-inline-block w--current"
+          >
+            <div>Seán <span class="site-name-text-span">Meade</span></div>
+          </a>
+          <div>Copyright © Kabello Studio</div>
+        </div>
+      </div>
+    </footer>
 
+    <script src="" async defer></script>
+    {% comment %} <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          var form = event.target;
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            alert("Please fill out all required fields.");
+          }
+        });
+    </script> {% endcomment %}
+    <script>
+      var form = document.getElementById("my-form");
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: { Accept: "application/json" },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
 </html>
